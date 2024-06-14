@@ -1,76 +1,70 @@
-
-body {
-    background-color: rgb(207, 84, 84);
+* {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
 }
 
-.header {
-    background-image: url(images/bg.jpg);
-    background-position: center center;
+body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    position: relative;
-    min-height: 100vh;
-    align-items: center;
 }
 
-.menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+
+footer{
+    position: fixed;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 70px;
+    align-items: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    color: white;
 }
 
 .logo {
     color: #ffffff;
+    width: 15vh;
+    height: auto;
+    left: 2%;
+    top: 1%;
+    justify-content:flex-start;
     font-size: 25px;
     font-weight: bold;
-}
-
-.menu .navbar ul li {
-    position: relative;
-    float: left;
-}
-
-.menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: #ffffff;
-    display: block;
-    font-weight: bold;
-}
-
-.menu .navbar ul li a:hover {
-    color: #266371;
-}
-
-.icons {
-    display: flex;
-
-}
-
-.icons i {
-    font-size: 25px;
-    color: #ffffff;
-    margin-right: 15px;
+    position: fixed;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.icons i:hover {
-    color: #266371;
+.logo:hover{
+    transform: scale(1.2);
 }
-
+.menu {
+    position: fixed;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
 #menu {
     display: none;
 }
+.menu .navbar ul li {
+    justify-content:flex-end;
+    float: right;
+}
 
 .menu-icono {
-    width: 25px;
+    width: 40px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .menu label {
@@ -78,48 +72,79 @@ body {
     display: none;
 }
 
-.header-txt {
-    width: 40%;
-    box-sizing: border-box;
+.menu-icono:hover{
+    transform: scale(1.3);
 }
-
-.header-txt h1 {
-    font-size: 70px;
-    line-height: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #266371;
-    margin-bottom: 25px;
-    font-family: "Roboto Condensed", sans-serif; 
-}
-
-.header-txt p {
-    color: #ffffff;
-    font-weight: 500;
-    margin-bottom: 25px;
+    
+.menu .navbar ul li a {
     font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: bold;
+    justify-content: flex-end;
+    transition: transform 0.3s ease;
+}
+    
+.menu .navbar ul li a:hover {
+    color: #8ECAE6;
+    transform: scale(1.2);
+}
+
+h1{
+    font-size: 80px;
+    font-family: "Arimo", sans-serif;
+}
+
+h2{
+    font-size: 60px;
+    font-family: "Arimo", sans-serif;
+}
+
+h3{
+    font-size: 50px;
+    font-family: "Arimo", sans-serif;
+}
+h4{
+    font-size: 40px;
+    font-family: "Arimo", sans-serif;
+}
+h5{
+    font-size: 30px;
+    font-family: "Arimo", sans-serif;
+}
+    
+    
+p{
+    font-size: 15px;
+    font-family: "Arimo", sans-serif;
+    line-height: 1.5;  
+    text-decoration: none;
+}
+
+a{
+    font-family: "Arimo", sans-serif;
 }
 
 
-@media(max-width:991px) {
-    .menu {
-        padding: 30px;
+@media(max-width:990px) {
+
+    @media(max-width:500px) {
+       
     }
 
     .menu label {
         display: initial;
     }
-
     .menu .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         background-color: #3F3F3F48;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
         display: none;
     }
-
     .menu .navbar ul li {
         width: 100%;
     }
@@ -127,36 +152,19 @@ body {
     #menu:checked ~ .navbar {
         display: initial;
     }
-
-    .icons {
-        display: none;
-    }
-
     .header {
         padding: 80px 30px 50px 30px;
         align-items: self-start;
         flex-direction: column;
         align-items: center;
     }
-
-    .header-txt {
-        text-align: center;
-        width: 100%;
-        margin-bottom: 30px;
-        padding: 10px;
+    .menu {
+        padding: 30px;
+        z-index: 100;
     }
-
-    .header-txt h1 {
-        margin-bottom: 10px;
+    footer{
+        position: relative;
     }
-
-    .images {
-        position: initial;
-        width: 300px;
-        height: 300px;
-    }
-
-    .rows {
-        display: none;
-    }
+    
 }
+

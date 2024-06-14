@@ -3,31 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnEnglishPage</title>
+    <title>Learn English</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
 </head>
 <body>
-    <div class="menu conteiner">
-        <a href="#" class="logo">Destino</a>
+    <div class="menu">
+        <a href="home.html" class="logo-link">
+            <img src="styles/Images/logo.png" class="logo" alt="logo">
+        </a>
         <input type="checkbox" id="menu" />
         <label for="menu">
-             <img src="styles/Images/menu.png" class="menu-icono" alt="">
+            <img src="styles/Images/menu.png" class="menu-icono" alt="">
         </label>
         <nav class="navbar">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Reservaciones</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="home.html">Home</a></li>
             </ul>
         </nav>
-        <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </div>
-    </div>
 
-</body>
+     </div>
+        <div class="home">
+            <div class="titles">
+                <h1>Let´s Party with Language!</h1>
+                <h5>By Nicolás Mejía Calderón</h5>
+            </div>
+            <div class="container">
+                <a href="grammar.html" class="box">
+                    <img src="styles/Images/grammar.png" class="icons" alt="Grammar">
+                    <h4 class="landingtitles">Grammar</h4>
+                    <p>Master essential grammar rules in English with our detailed lessons and clear examples.</p>
+                </a>
+                
+                <a href="#" class="box">
+                    <img src="styles/Images/exercises.png" class="icons" alt="Exercises">
+                    <h4 class="landingtitles">Exercises</h4>
+                    <p>Test your skills with our interactive exercises and receive immediate feedback.</p>
+                </a>
+                
+                <a href="#" class="box">
+                    <img src="styles/Images/talkMate.png" class="icons" alt="talkMate">
+                    <h4 class="landingtitles">TalkMate</h4>
+                    <p>Practice your conversation in English with Nico, our virtual software, and have fun!</p>
+                </a>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="right-section">
+            <img src="styles/Images/github.png" class="menu-icono" alt="">
+            <img src="styles/Images/email.png" class="menu-icono" alt="">
+        </div>
+        <div class="left-section">
+            <p>Copyright © 2024</p>
+        </div>
+    </footer>
 </html>
