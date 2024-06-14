@@ -1,3 +1,9 @@
+
+body {
+    background-color: rgb(207, 84, 84);
+    text-decoration: none;
+}
+
 .header {
     background-image: url(images/bg.jpg);
     background-position: center center;
