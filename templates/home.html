@@ -21,10 +21,10 @@
         </label>
         <nav class="navbar">
             <ul>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Contribution</a></li>
-                <li><a href="#">About me</a></li>
+                <li><a href="privacyPolicy.html">Privacy policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contribution.html">Contribution</a></li>
+                <li><a href="aboutme.html">About me</a></li>
                 <li><a href="home.html">Home</a></li>
             </ul>
         </nav>
@@ -42,7 +42,7 @@
                     <p>Master essential grammar rules in English with our detailed lessons and clear examples.</p>
                 </a>
                 
-                <a href="#" class="box">
+                <a href="exercises.html" class="box">
                     <img src="styles/Images/exercises.png" class="icons" alt="Exercises">
                     <h4 class="landingtitles">Exercises</h4>
                     <p>Test your skills with our interactive exercises and receive immediate feedback.</p>
@@ -58,11 +58,29 @@
     </body>
     <footer>
         <div class="right-section">
-            <img src="styles/Images/github.png" class="menu-icono" alt="">
-            <img src="styles/Images/email.png" class="menu-icono" alt="">
+            <a href="https://github.com/Nicodingg/LearnEnglishPage">
+                <img src="styles/Images/github.png" class="menu-icono" alt="">
+            </a>
+            <a href="mailto:nico.mejia.2004@gmail.com">
+                <img src="styles/Images/email.png" class="menu-icono" alt="">
+            </a>
         </div>
         <div class="left-section">
-            <p>Copyright © 2024</p>
+            <a href="privacyPolicy.html" class="left-section">Copyright © 2024</a>
+            <style>
+                .left-section a {
+                    font-family:  "Arimo", sans-serif;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                transition: transform 0.3s ease;
+                height: auto;
+                margin-right: 10px;
+                }
+
+                .left-section a:hover {
+                transform: scale(1.2);
+                }
+            </style>
         </div>
     </footer>
 </html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contribution.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="menu" style="height: 100px;">
+        <a href="home.html" class="logo-link">
+            <img src="styles/Images/logo.png" class="logo" alt="logo">
+        </a>
+        <input type="checkbox" id="menu" />
+        <label style="overflow: hidden;" for="menu">
+            <img src="styles/Images/menu.png" class="menu-icono" alt="">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li style="overflow: hidden;"><a href="privacyPolicy.html">Privacy policy</a></li>
+                <li style="overflow: hidden;"><a href="contact.html">Contact</a></li>
+                <li style="overflow: hidden;"><a href="contribution.html">Contribution</a></li>
+                <li style="overflow: hidden;"><a href="aboutme.html">About me</a></li>
+                <li style="overflow: hidden;"><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <h2 class="titleGrammar"></h2>
+        <div class="container">
+            <div class="column">
+                <p class="contributionText"> 
+                    <strong>Join Us and Support Our Mission: Make Your Donation Today</strong><br><br>
+
+                    Your generosity is crucial to keeping our platform alive. Every donation we receive allows us to continue offering quality service, ensuring our community can grow and thrive.<br><br>
+
+                    With your contribution, you're directly supporting ongoing development and improvement of our platform. From keeping our servers running smoothly to implementing new features that benefit all users, every dollar counts and makes a significant difference.<br><br>
+
+                    Together, we can ensure this space remains a vibrant and safe place for everyone. Join us on this journey and be part of positive change. Your support is essential and deeply appreciated.<br><br>
+
+                    Make your donation today and help build a better future for our community!
+                </p>
+                
+            </div>
+            <div class="column">
+                
+
+                <div class="contributiondiv">
+                    <div class="paymentMethod">
+                      <h4>Choose Your Payment Method</h1>
+                    </div>
+                    <div class="payment-options">
+                        <button class="payment-button paypal" onclick="payWithPayPal()">Show PayPal</button>
+                        <button class="payment-button nequi" onclick="payWithNequi()">Show Nequi</button>
+                    </div>
+                    <div id="respuesta">
+                    
+                        <div class="cuadropaypal">
+                            <div class="paypalimg">
+                                <img src="styles/Images/paypal.webp" alt="Paypal">
+                            </div>
+                            <div class="paypalinfo">
+                                <img src="styles/Images/Código QR.png" alt="">
+                                <p>Or<br><a href="">https://www.paypal.com/donate/?hosted_button_id=3V8ZL8KUN3F2E</a></p>
+                            </div>
+
+                        </div>
+                        <div class="cuadronequi">
+                            <div class="nequiimg">
+                                <img src="styles/Images/nequi.avif" alt="Nequi">
+                            </div>
+                            <div class="nequiinfo">
+                                <img src="styles/Images/qr.JPG" alt="">
+                                <p>Or<br><br>321 611 27 77</p>
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+                </div>
+
+                <script>
+                    function payWithPayPal() {
+                        document.querySelector('.cuadropaypal').style.display = 'block';
+                    }
+            
+                    function payWithNequi() {
+                        document.querySelector('.cuadronequi').style.display = 'block';
+                    }
+                </script>
+               
+            </div>
+
+            <div class="column">
+                <div class="Advertisement"><strong>Advertisements</strong><br><br>This space is reserved for future Google AdSense advertisements.</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="right-section">
+            <a href="https://github.com/Nicodingg/LearnEnglishPage">
+                <img src="styles/Images/github.png" class="menu-icono" alt="">
+            </a>
+            <a href="mailto:nico.mejia.2004@gmail.com">
+                <img src="styles/Images/email.png" class="menu-icono" alt="">
+            </a>
+        </div>
+        <div class="left-section">
+            <a href="privacyPolicy.html" class="left-section">© 2024 Nicolás Mejía. All rights reserved.</a>
+            <style>
+                .left-section{
+                    width: 380px;
+                }
+                .left-section a {
+                    font-family:  "Arimo", sans-serif;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    transition: transform 0.3s ease;
+                    height: auto;
+                    margin-right: 10px;
+                }
+
+                .left-section a:hover {
+                    transform: scale(1.2);
+                }
+            </style>
+        </div>
+    </footer
+
+</body>
+
+</html>
