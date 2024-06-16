@@ -59,11 +59,15 @@ a p:hover{
     color: white;
 }
 
+.column h3{
+    text-align: center;
+}
+
 .column:nth-child(1) {
     align-items: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 45%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     overflow: hidden;
 }
   
@@ -75,12 +79,12 @@ a p:hover{
     align-items: center;
     text-align: center;
     justify-content: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
   
 .column:nth-child(3) {
     width: 20%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
