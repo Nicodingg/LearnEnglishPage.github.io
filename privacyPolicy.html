@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn English</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/privacyPolicy.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
     </style>
 </head>
 <body>
     <div class="menu" style="height: 100px;">
-        <a href="home.html" class="logo-link">
+        <a href="index.html" class="logo-link">
             <img src="styles/Images/logo.png" class="logo" alt="logo">
         </a>
         <input type="checkbox" id="menu" />
@@ -25,48 +25,27 @@
                 <li style="overflow: hidden;"><a href="contact.html">Contact</a></li>
                 <li style="overflow: hidden;"><a href="contribution.html">Contribution</a></li>
                 <li style="overflow: hidden;"><a href="aboutme.html">About me</a></li>
-                <li style="overflow: hidden;"><a href="home.html">Home</a></li>
+                <li style="overflow: hidden;"><a href="index.html">Home</a></li>
             </ul>
         </nav>
     </div>
     <div class="main">
-        <h2 class="titleGrammar">Contact me</h2>
+        <h2 class="titleGrammar">Privacy policy</h2>
         <div class="container">
             <div class="column">
-                
-                <section class="contact">
-                    <div class="u-wrapper">
-                      <div class="contact-content">
-                
-                        <form id="form" action="" class="form">
+                <p class="privacyPolicyText">
+                    On our website, we are committed to protecting your privacy and ensuring that your online experience is safe and satisfactory. This privacy policy explains how we handle the information we collect when you visit our website.<br><br>
+
+                    <strong>External Links</strong><br>
+                    Our website may contain links to other websites that are not under our control. We are not responsible for the privacy practices of these external websites. We recommend that you review the privacy policies of those websites before providing any personal information.<br><br>
                     
-                          <label for="name">Full name <span>*</span></label>
-                          <input name="name" required type="text" id="name" placeholder="Juan">
-                          <label for="email">E-mail <span>*</span></label>
-                          <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
-                          <label for="message">Messaje</label>
-                          <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
-                          <button type="submit" id="send" class="btn primary full">Send</button>
-                        </form>
-                        <a href="mailto:nico.mejia.2004@gmail.com" id="trucazo"></a>
-                      </div>
-                    </div>
-                  </section>
-                  
-                  <script>
-                    const $form = document.querySelector('#form')
-                    const $buttonMailto = document.querySelector('#trucazo')
-                
-                    $form.addEventListener('submit', handleSubmit)
-                
-                    function handleSubmit(event) {
-                      event.preventDefault()
-                      const form = new FormData(this)
-                      $buttonMailto.setAttribute('href', `mailto:nico.mejia.2004@gmail.com?subject=Name: ${form.get('name')} | E-mail: ${form.get('email')}&body=${form.get('message')}`)
-                      $buttonMailto.click()
-                    }
-                  </script> 
-                
+                    <strong>Children Under Age</strong><br> 
+                    Our website is not directed to children under 13 years of age, and we do not intentionally collect personal information from children under age. If you are under 13 years old, please do not provide personal information on our website.<br><br>
+                    
+                    <strong>Images from Freepik</strong><br> 
+                    Some images used on our website are provided by Freepik and are subject to their terms of use. For more information about Freepik's terms of use, please visit www.freepik.com. The use of these images is governed by Freepik's terms and conditions, and we assume no liability for their content or use.
+                </p>
+                <img src="styles/Images/privacypolicy.png" alt="privacyPolicy">
             </div>
            
             <div class="column">
@@ -103,7 +82,7 @@
                 }
             </style>
         </div>
-    </footer
+    </footer>
 </body>
 
 </html>
