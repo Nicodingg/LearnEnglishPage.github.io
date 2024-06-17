@@ -8,7 +8,7 @@
     overflow: visible;
 }
 body {
-    background-image: url(images/bg_opc.jpg);
+    background-image: url(Images/bg_opc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
