@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-
+    overflow: visible;
 }
 body {
     background-image: url(images/bg_opc.jpg);
