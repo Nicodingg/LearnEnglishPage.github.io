@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #000000;
 }
 
 .menu{
@@ -28,17 +29,18 @@ body {
 }
 
 .titleGrammar {
-    margin-top: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 2vh;
 }
 
 .container {
     flex-wrap: wrap;
     margin-top: 10px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -53,29 +55,35 @@ body {
 }
 
 .column:nth-child(1) {
+    width: 20%;
+    margin-bottom: 1%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column:nth-child(2) {
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40px;
-    width: 77%;
-    /* border: 2px solid red; */
+    width: 50%;
     overflow: hidden;
     flex-wrap: wrap;
-    justify-content: center;
     flex-direction: row;
-    gap: 18px;
     padding-bottom: 13px;
     background: linear-gradient(to bottom, #C7F9CC, #8ECAE6);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: 2%;
-    margin-right: 1%;
     margin-bottom: 1%;
     overflow: hidden;
-
 }
 
-.column:nth-child(2) {
+
+    
+.column:nth-child(3) {
     width: 20%;
+    margin-bottom: 1%;
     /* border: 2px solid green; */
     display: flex;
     justify-content: center;
@@ -100,18 +108,17 @@ img{
 
 .form {
     max-inline-size: 550px;
-    margin: auto;
     padding: 50px;
-    border: 2px solid #FB8500;
+    border: 5px solid #f6f6f6;
     border-radius: 40px;
     width: 700px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     overflow: hidden;
 }
   
 .form label {
     display: block;
-    margin-block-start: 1em;
+    margin-block-start: 1em; 
     margin-block-end: .5em;
     padding-inline-start: .5em;
 }
@@ -139,10 +146,9 @@ input::-webkit-input-placeholder {
   
   
 .contact {
-    padding-top: 40px;
-    margin-block-end: 12px;
-    margin-block-start:10px;
-    width: 50%;
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
     /* border: 2px solid red; */
 }
   
@@ -170,7 +176,6 @@ input::-webkit-input-placeholder {
     line-height: 50px;
     border: 2px solid var(--black);
     font-weight: bold;
-    padding: 0 1.5em;
 }
 .btn.full {
     width: 100%;
@@ -210,6 +215,14 @@ input::-webkit-input-placeholder {
     transform: scale(1.1);
     z-index: 10;
 }
+section{
+    /* border: 10px solid white; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
 
   
 
@@ -220,7 +233,7 @@ input::-webkit-input-placeholder {
     padding: 20px;
     background-color: #F1F1F1;
     width: 90%;
-    height: 90%;
+    height: 100%;
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.6);
     border-radius: 15px;
 }
@@ -289,21 +302,26 @@ footer{
         justify-content: space-between;
         gap: 20px;
     }
+    .column:nth-child(1){
+        display: none;
+    }
 
-    .column:nth-child(1) {
+    .column:nth-child(2) {
         align-items: center;
         /* border: 2px solid green; */
         width: 96%;
         gap: 10px;
         margin-bottom: 5%;
         margin-right: 10px;
+
     }
 
-   
-   
-
-    .column:nth-child(2) {
+    .column:nth-child(3){
         display: none;
     }
 
+   
+   
+
+   
 }

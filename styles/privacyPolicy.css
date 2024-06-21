@@ -87,6 +87,8 @@ body {
 }
 img{
     width: 500px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .Advertisement {

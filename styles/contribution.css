@@ -114,6 +114,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .nequiimg{
     height: 20%;
@@ -138,14 +139,22 @@ body {
     padding: 10px;
     margin-top: 10px;
     background-color: white;
+    text-align: center;
+    overflow: hidden;
 }
 .nequiinfo p{
     font-size: 18px;
     font-weight: 600;
+    overflow: hidden;
 }
 .paypalinfo p{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
+    overflow: hidden;
+    width: 80%;
+    display: flex;
+    align-content: center;
+    overflow: hidden;
 }
 .paypalimg img{
     width: 60%;
@@ -158,6 +167,7 @@ body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #dad7cd;
+    overflow: hidden;
 }
 .nequiinfo{
     width: 100%;
@@ -166,6 +176,7 @@ body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #dad7cd;
+    overflow: hidden;
 }
 
 .paymentMethod{
@@ -217,6 +228,12 @@ body {
     background-color: #8ECAE6;
     display: none;
     border-radius: 20px;
+    overflow: hidden;
+}
+.cuadropaypal a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cuadronequi{
@@ -225,6 +242,29 @@ body {
     background-color: #ce68fd;
     display: none;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.paypalinfo  p a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 17px;
+    padding: 10px;
+    display: inline-block;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+.cudaroCentro{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    
 }
 
 .contributionText{
