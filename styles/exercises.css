@@ -291,3 +291,7 @@ footer{
         overflow: visible;
     }
 }
+
+@media(max-width:400px) {
+    
+}

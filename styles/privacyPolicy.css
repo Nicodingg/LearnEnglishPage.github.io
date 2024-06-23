@@ -15,7 +15,7 @@ body {
 .menu{
     position: relative;
     overflow: hidden;
-    z-index: 5;
+    z-index: 10;
     background-image: url(Images/bg_opc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,7 +85,7 @@ body {
     text-decoration: none;
     font-weight: 400;
 }
-img{
+.column img{
     width: 500px;
     border-radius: 20px;
     margin-bottom: 20px;
